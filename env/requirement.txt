@@ -1,0 +1,28 @@
+# Core libraries
+numpy==1.24.0
+torch==2.0.1  # Adjust version based on MPS support for Apple Silicon
+
+# Hugging Face Transformers for models, tokenization, and Trainer API
+transformers==4.31.0
+
+# Hugging Face Datasets for data handling and tokenization
+datasets==2.10.1
+
+# MLflow for experiment tracking and model logging
+mlflow==2.4.0
+
+# Boto3 for interacting with MinIO (S3-compatible object storage)
+boto3==1.28.0
+
+# FAISS for efficient similarity search (if needed in future phases)
+faiss-cpu==1.7.3  # Use faiss-gpu if you want GPU support
+
+# MinIO SDK for Python
+minio==7.0.2
+
+# Tokenizers library used by Hugging Face (may already be included with transformers)
+tokenizers==0.13.3
+
+# For compatibility with Apple M1 GPU (MPS)
+mps-support==0.0.1  # Ensure that the correct versions of Torch support Apple Silicon
+
